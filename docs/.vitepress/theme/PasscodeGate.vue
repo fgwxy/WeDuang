@@ -1,7 +1,7 @@
 <script setup>
 import { ref, computed, onMounted, watch } from 'vue'
 import { useRoute } from 'vitepress'
-import { gateConfig } from './gateConfig.js'
+import gateConfig from './gateConfig.js'
 
 const route = useRoute()
 const unlocked = ref(false)
@@ -22,7 +22,9 @@ const isGated = computed(() => {
   const p = route.path
   // 专栏入口页不拦
   if (p === '/testing-basics/' || p === '/interviews/') return false
-  return gateConfig.gatedPrefixes.some(pre => p.startsWith(pre))
+  // 硬编码需要验证的路径
+  const gatedPrefixes = ['/testing-basics/', '/interviews/']
+  return gatedPrefixes.some(pre => p.startsWith(pre) && !p.endsWith('/'))
 })
 
 function check() {
