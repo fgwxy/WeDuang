@@ -6,6 +6,7 @@ export default defineConfig({
   lang: 'zh-CN',
   lastUpdated: true,
   cleanUrls: true,
+  base: '/',
 
   themeConfig: {
     logo: '/logo.svg',
