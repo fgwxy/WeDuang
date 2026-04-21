@@ -5,7 +5,7 @@ export default defineConfig({
   description: '测试开发学习、面经与实战沉淀',
   lang: 'zh-CN',
   lastUpdated: true,
-  cleanUrls: true,
+  cleanUrls: false,
   base: '/',
 
   themeConfig: {
