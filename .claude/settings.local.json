@@ -1,0 +1,24 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm -v)",
+      "Bash(npm add *)",
+      "Bash(npm run *)",
+      "Read(//d/note/测开指导/测开指导-md/**)",
+      "Bash(cp \"01-计算机基础.md\"           /d/weduang/docs/testing-basics/computer-basics.md)",
+      "Bash(cp \"02-Java核心技术.md\"         /d/weduang/docs/testing-basics/java-core.md)",
+      "Bash(cp \"03-测试理论与策略.md\"        /d/weduang/docs/testing-basics/testing-theory.md)",
+      "Bash(cp \"04-Linux与Shell.md\"        /d/weduang/docs/testing-basics/linux-shell.md)",
+      "Bash(cp \"06-面经收集.md\"              /d/weduang/docs/interviews/overview.md)",
+      "Bash(cp \"测开面经链接清单.md\"          /d/weduang/docs/interviews/links.md)",
+      "Bash(cp \"测开面经-阿里.md\"             /d/weduang/docs/interviews/alibaba.md)",
+      "Bash(cp \"测开面经-腾讯.md\"             /d/weduang/docs/interviews/tencent.md)",
+      "Bash(cp \"测开面经-字节跳动.md\"         /d/weduang/docs/interviews/bytedance.md)",
+      "Bash(pkill -f \"vitepress dev\")",
+      "Bash(taskkill /F /IM node.exe)",
+      "Bash(git init *)",
+      "Bash(git add *)",
+      "Bash(git commit *)"
+    ]
+  }
+}
