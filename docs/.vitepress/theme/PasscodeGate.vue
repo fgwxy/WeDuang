@@ -59,12 +59,12 @@ watch(() => route.path, check)
       <div class="gate-card">
         <h2>🔒 需要口令解锁</h2>
         <p class="gate-desc">
-          关注微信公众号 <b>{{ gateConfig.wxName }}</b>，<br />
-          回复关键词 <b>「{{ gateConfig.wxKeyword }}」</b> 获取口令
+          关注微信公众号 <b>{{ gateConfig.siteName }}</b>，<br />
+          回复关键词 <b>「{{ gateConfig.keyword }}」</b> 获取口令
         </p>
         <img
-          v-if="gateConfig.qrcode"
-          :src="gateConfig.qrcode"
+          v-if="gateConfig.qrCode"
+          :src="gateConfig.qrCode"
           alt="公众号二维码"
           class="gate-qr"
         />

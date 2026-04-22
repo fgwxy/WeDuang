@@ -11,6 +11,10 @@
         回复关键词 <code>口令</code> 获取访问口令
       </p>
 
+      <div v-if="config.qrCode" class="qr-container">
+        <img :src="config.qrCode" :alt="config.siteName" class="qr-code">
+      </div>
+
       <form @submit.prevent="verifyPasscode" class="passcode-form">
         <input
           v-model="inputCode"
@@ -34,11 +38,13 @@
 
 <script setup>
 import { ref, onMounted } from 'vue'
+import gateConfig from '../gateConfig.js'
 
 const isUnlocked = ref(false)
 const inputCode = ref('')
 const error = ref('')
 const preview = ref('')
+const config = gateConfig
 const PASSCODE = 'duang2026' // 直接使用明文进行测试
 
 const verifyPasscode = () => {
@@ -100,6 +106,21 @@ onMounted(() => {
   padding: 0.2rem 0.5rem;
   border-radius: 4px;
   color: var(--vp-c-brand-1);
+}
+
+.qr-container {
+  margin: 1.5rem 0;
+  display: flex;
+  justify-content: center;
+}
+
+.qr-code {
+  width: 150px;
+  height: 150px;
+  border-radius: 12px;
+  border: 1px solid var(--vp-c-border);
+  padding: 0.5rem;
+  background: white;
 }
 
 .passcode-form {
