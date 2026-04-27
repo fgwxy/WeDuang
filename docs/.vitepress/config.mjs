@@ -14,6 +14,7 @@ export default defineConfig({
     nav: [
       { text: '首页', link: '/' },
       { text: '测试开发基础', link: '/testing-basics/' },
+      { text: '质量保障', link: '/quality-assurance/' },
       { text: '面经收集', link: '/interviews/' },
       { text: '关于', link: '/about' }
     ],
@@ -34,13 +35,27 @@ export default defineConfig({
           ]
         }
       ],
+      '/quality-assurance/': [
+        {
+          text: '质量保障',
+          items: [
+            { text: '专栏首页', link: '/quality-assurance/' },
+            { text: '测试计划怎么写', link: '/quality-assurance/test-plan' },
+            { text: '测试报告模板', link: '/quality-assurance/test-report' },
+            { text: '测试左移与测试右移', link: '/quality-assurance/shift-left-right' },
+            { text: '测试如何参与需求评审', link: '/quality-assurance/requirement-review' },
+            { text: '持续集成体系下的质量保障', link: '/quality-assurance/ci-quality' },
+            { text: '如何保障开发代码的质量', link: '/quality-assurance/code-quality' },
+            { text: '代码覆盖率统计 Jacoco 技术', link: '/quality-assurance/jacoco' }
+          ]
+        }
+      ],
       '/interviews/': [
         {
           text: '综合',
           items: [
             { text: '专栏首页', link: '/interviews/' },
-            { text: '面经总览', link: '/interviews/overview' },
-            { text: '面经链接清单', link: '/interviews/links' }
+            { text: '面经总览', link: '/interviews/overview' }
           ]
         },
         {
@@ -77,7 +92,7 @@ export default defineConfig({
     },
 
     outline: { level: [2, 3], label: '本页目录' },
-    docFooter: { prev: '上一篇', next: '下一篇' },
+    docFooter: { prev: '下一篇', next: '下一篇' },
     lastUpdatedText: '最后更新',
     darkModeSwitchLabel: '主题',
     returnToTopLabel: '回到顶部',

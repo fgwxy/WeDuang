@@ -19,12 +19,14 @@ features:
     details: 计算机基础、Java、测试理论、Linux、手撕代码、AI 大模型、项目选型，打牢测开岗底座。
     link: /testing-basics/
     linkText: 进入专栏
+  - icon: 🛡️
+    title: 质量保障
+    details: 测试计划、测试报告、测试左移右移、需求评审、CI/CD、代码覆盖率 Jacoco，覆盖全流程质量管控。
+    link: /quality-assurance/
+    linkText: 进入专栏
   - icon: 💼
     title: 面经收集
     details: 阿里、腾讯、字节、百度、华为等一线大厂测开岗真实面经，按公司分册整理。
     link: /interviews/
     linkText: 进入专栏
-  - icon: 🚀
-    title: 持续更新
-    details: 整理自大厂真实面试经历，长期维护。关注公众号获取最新口令，解锁全部内容。
 ---
